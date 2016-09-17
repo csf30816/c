@@ -15,6 +15,6 @@
 <script>
   var code = document.getElementsByClassName("CodeMirror-code").textContent
   window.setInterval(function () {
-    document.getElementByID("code").innerHTML = '<iframe src="data:text/html,' + code + '"></iframe>'
+    document.getElementById("code").innerHTML = '<iframe src="data:text/html,' + code + '"></iframe>'
   }, 100);
 </script>
