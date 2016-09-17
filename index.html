@@ -1,5 +1,16 @@
-<frameset rows="100%" cols="100%">
-  <frame src="https://codeshare.io/arZJz">
-    
-  </frame>
-</frameset>
+<style>
+  body {
+    margin:0;
+  }
+</style>
+<iframe src="https://codeshare.io/arZJz" width="100vw" height="50vh">
+</iframe>
+<div id="code">
+  <iframe src="data:text/html," width="100vw" height="50vh"></iframe>
+</div>
+<script>
+  var code = document.getElementsByClassName("CodeMirror-code").textContent
+  window.setInterval(function () {
+    document.getElementByID("code").innerHTML = '<iframe src="data:text/html,' + code + '" width="100vw" height="50vh"></iframe>'
+  }, 100);
+</script>
